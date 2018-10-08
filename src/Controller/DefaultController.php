@@ -1,5 +1,5 @@
 <?php
-
+namespace App\DefaultController;
 class DefaultController {
 
   /**
