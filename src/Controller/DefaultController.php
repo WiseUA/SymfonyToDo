@@ -21,6 +21,7 @@ class DefaultController extends Controller
    */
   public function dataAction()
   {
+
     return new JsonResponse([
       [
         'id' => 1,
