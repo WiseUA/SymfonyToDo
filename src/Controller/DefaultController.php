@@ -8,11 +8,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends Controller
 {
+
   /**
    * @Route("/", name="index")
+   * @return \Symfony\Component\HttpFoundation\Response
    */
   public function indexAction()
   {
+    $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY'); // Redirect to log in if not auth.
     return $this->render('Default/index.html.twig', []);
   }
 
