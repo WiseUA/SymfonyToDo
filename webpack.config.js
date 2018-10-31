@@ -35,6 +35,7 @@ Encore
     // enables hashed filenames (e.g. app.abc123.css)
     .enableVersioning(Encore.isProduction())
     .configureBabel(function(babelConfig) {
+      babelConfig.plugins = ["transform-object-rest-spread","transform-class-properties"]
       babelConfig.presets.push('env');
     })
     .enableReactPreset();

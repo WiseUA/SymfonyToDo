@@ -1,6 +1,8 @@
 {
     "devDependencies": {
         "@symfony/webpack-encore": "^0.20.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-polyfill": "^6.26.0",
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "^6.24.1",
@@ -19,6 +21,8 @@
         "build": "encore production"
     },
     "dependencies": {
+        "@material-ui/core": "latest",
+        "@material-ui/icons": "latest",
         "material-ui": "^0.20.2"
     }
 }
